@@ -28,4 +28,4 @@ La dirección de memoria del puntero
 No
 
 **¿Por qué?**  
-Porque un puntero es otra variable.
+Porque un puntero es otra variable con su propia dirección de memoria.
