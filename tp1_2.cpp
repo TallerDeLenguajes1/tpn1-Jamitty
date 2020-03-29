@@ -3,13 +3,22 @@
 // Funciones
 int cuadrado(int num);
 void cuadradoVoid(int* num);
+void invertir(int* a, int* b);
 
 // Main
 int main() {
-    int num;
-    printf("Ingresar un numero: "); scanf("%d", &num);
+    // int num;
+    // printf("Ingresar un numero: "); scanf("%d", &num);
     // printf("Cuadrado de %d: %d", num, cuadrado(num));
-    cuadradoVoid(&num);
+    // cuadradoVoid(&num);
+
+    int a;
+    int b;
+    printf("Ingresar a: "), scanf("%d", &a);
+    printf("Ingresar b: "), scanf("%d", &b);
+    invertir(&a, &b);
+    printf("a: %d", a);
+    printf("\nb: %d", b);
     return 0;
 }
 
@@ -23,4 +32,12 @@ void cuadradoVoid(int* num) {
     printf("Numero ingresado: %d", *num);
     printf("\nDireccion de memoria de la variable: %p", num);
     printf("\nCuadrado de %d: %d", *num, (*num)*(*num));
+}
+
+// invierte los valores de dos variables
+void invertir(int* a, int* b) {
+    int aux;
+    aux = *a;
+    *a = *b;
+    *b = aux;
 }
