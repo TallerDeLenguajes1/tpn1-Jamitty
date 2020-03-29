@@ -15,12 +15,11 @@ int main() {
 
     int a;
     int b;
-    printf("Ingresar a: "), scanf("%d", &a);
-    printf("Ingresar b: "), scanf("%d", &b);
+    printf("Ingresar dos numeros enteros separados por un espacio: "), scanf("%d %d", &a, &b);
     printf("Ordenando...");
     ordenar(&a, &b);
-    printf("\na: %d", a);
-    printf("\nb: %d", b);
+    printf("\nMenor: %d", a);
+    printf("\nMayor: %d", b);
     return 0;
 }
 
