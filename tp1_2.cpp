@@ -2,6 +2,7 @@
 
 // Funciones
 int cuadrado(int num);
+void cuadradoVoid(int num);
 
 // Main
 int main() {
@@ -11,6 +12,12 @@ int main() {
     return 0;
 }
 
+// Devuelve el cuadrado de un numero
 int cuadrado(int num) {
     return num*num;
+}
+
+// cuadrado() pero devuelve un void
+void cuadradoVoid(int num) {
+    printf("%d", num*num);
 }
