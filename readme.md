@@ -17,7 +17,7 @@ usando y el entorno en el que trabajo.
 **¿Cómo confi-guraría el archivo .gitignore?**  
 Dependiendo del proyecto que esté haciendo.
 
-### Punto 2
+#### Punto 2
 **Si resolvió correctamente los puntos b) y c) notará que el resultado es el mis-mo. ¿a qué se debe?**  
 Porque en el puntero almacené la dirección de memoria de la variable.
 
