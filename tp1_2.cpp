@@ -4,6 +4,7 @@
 int cuadrado(int num);
 void cuadradoVoid(int* num);
 void invertir(int* a, int* b);
+void ordenar(int* a, int* b);
 
 // Main
 int main() {
@@ -16,8 +17,9 @@ int main() {
     int b;
     printf("Ingresar a: "), scanf("%d", &a);
     printf("Ingresar b: "), scanf("%d", &b);
-    invertir(&a, &b);
-    printf("a: %d", a);
+    printf("Ordenando...");
+    ordenar(&a, &b);
+    printf("\na: %d", a);
     printf("\nb: %d", b);
     return 0;
 }
@@ -40,4 +42,14 @@ void invertir(int* a, int* b) {
     aux = *a;
     *a = *b;
     *b = aux;
+}
+
+// Ordena los valores de dos variables de menor a mayor
+void ordenar(int* a, int* b) {
+    if (*a > *b) {
+        int aux;
+        aux = *a;
+        *a = *b;
+        *b = aux;
+    }
 }
